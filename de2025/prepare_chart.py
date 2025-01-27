@@ -6,8 +6,8 @@ path = "de2025/"
 
 def process_german_polls(polls_file, weighted_file, election_date='2021-09-26'):
   # Read the files
-  polls_df = pd.read_csv(path + polls_file)
-  weighted_df = pd.read_csv(path + weighted_file)
+  polls_df = pd.read_csv(polls_file)
+  weighted_df = pd.read_csv(weighted_file)
   
   # Create election results DataFrame
   election_results = pd.DataFrame([{
